@@ -1,0 +1,267 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d6f6934af3117f428eb7fa35ff5bbeb, type: 3}
+  m_Name: so_ItemList
+  m_EditorClassIdentifier: 
+  itemsDetails:
+  - itemCode: 10000
+    itemType: 0
+    itemDescription: Acon
+    itemSprite: {fileID: 897317971, guid: 2c9a1965f41ba3c43b75e653528ccff5, type: 3}
+    itemLongDescription: Normal Acorn
+    itemUseGridRadius: 2
+    itemUseRadius: 0
+    isStartingItem: 0
+    canBePickedUp: 1
+    canBeDropped: 1
+    canBeEaten: 0
+    canBeCarried: 1
+  - itemCode: 10001
+    itemType: 1
+    itemDescription: Pumpkin
+    itemSprite: {fileID: -668894063, guid: 2c9a1965f41ba3c43b75e653528ccff5, type: 3}
+    itemLongDescription: A healthy food
+    itemUseGridRadius: 2
+    itemUseRadius: 0
+    isStartingItem: 0
+    canBePickedUp: 1
+    canBeDropped: 1
+    canBeEaten: 1
+    canBeCarried: 1
+  - itemCode: 10002
+    itemType: 1
+    itemDescription: Corn
+    itemSprite: {fileID: -1388993359, guid: 2c9a1965f41ba3c43b75e653528ccff5, type: 3}
+    itemLongDescription: Sweet corn
+    itemUseGridRadius: 2
+    itemUseRadius: 0
+    isStartingItem: 0
+    canBePickedUp: 1
+    canBeDropped: 1
+    canBeEaten: 1
+    canBeCarried: 1
+  - itemCode: 10003
+    itemType: 2
+    itemDescription: Watering can
+    itemSprite: {fileID: -705466381, guid: 6455975669d1d0041860f62999fb307d, type: 3}
+    itemLongDescription: A very basic watering tool
+    itemUseGridRadius: 1
+    itemUseRadius: 0
+    isStartingItem: 1
+    canBePickedUp: 1
+    canBeDropped: 0
+    canBeEaten: 0
+    canBeCarried: 0
+  - itemCode: 10004
+    itemType: 3
+    itemDescription: Hoeing tool
+    itemSprite: {fileID: -1500898681, guid: 6455975669d1d0041860f62999fb307d, type: 3}
+    itemLongDescription: Basic but useful
+    itemUseGridRadius: 1
+    itemUseRadius: 0
+    isStartingItem: 1
+    canBePickedUp: 1
+    canBeDropped: 0
+    canBeEaten: 0
+    canBeCarried: 0
+  - itemCode: 10005
+    itemType: 4
+    itemDescription: Iron Axe
+    itemSprite: {fileID: 375550254, guid: 6455975669d1d0041860f62999fb307d, type: 3}
+    itemLongDescription: normal Iron axe
+    itemUseGridRadius: 1
+    itemUseRadius: 0
+    isStartingItem: 1
+    canBePickedUp: 1
+    canBeDropped: 0
+    canBeEaten: 0
+    canBeCarried: 0
+  - itemCode: 10006
+    itemType: 0
+    itemDescription: Parsnip Seed
+    itemSprite: {fileID: 764673870, guid: 2c9a1965f41ba3c43b75e653528ccff5, type: 3}
+    itemLongDescription: Parsnip Seed
+    itemUseGridRadius: 2
+    itemUseRadius: 0
+    isStartingItem: 0
+    canBePickedUp: 1
+    canBeDropped: 1
+    canBeEaten: 0
+    canBeCarried: 1
+  - itemCode: 10007
+    itemType: 1
+    itemDescription: Parsnip
+    itemSprite: {fileID: -1310222073, guid: 2c9a1965f41ba3c43b75e653528ccff5, type: 3}
+    itemLongDescription: Normal parsnip
+    itemUseGridRadius: 2
+    itemUseRadius: 0
+    isStartingItem: 0
+    canBePickedUp: 1
+    canBeDropped: 1
+    canBeEaten: 1
+    canBeCarried: 1
+  - itemCode: 10008
+    itemType: 1
+    itemDescription: Wood
+    itemSprite: {fileID: -54617100, guid: 2c9a1965f41ba3c43b75e653528ccff5, type: 3}
+    itemLongDescription: Basic material
+    itemUseGridRadius: 2
+    itemUseRadius: 0
+    isStartingItem: 0
+    canBePickedUp: 1
+    canBeDropped: 1
+    canBeEaten: 0
+    canBeCarried: 1
+  - itemCode: 10009
+    itemType: 0
+    itemDescription: Wood oak
+    itemSprite: {fileID: 363696861, guid: 2c9a1965f41ba3c43b75e653528ccff5, type: 3}
+    itemLongDescription: wood oak
+    itemUseGridRadius: 0
+    itemUseRadius: 0
+    isStartingItem: 0
+    canBePickedUp: 0
+    canBeDropped: 0
+    canBeEaten: 0
+    canBeCarried: 0
+  - itemCode: 10010
+    itemType: 0
+    itemDescription: Pumpkin Seed
+    itemSprite: {fileID: 1337131664, guid: 2c9a1965f41ba3c43b75e653528ccff5, type: 3}
+    itemLongDescription: Seed of Pumpkin
+    itemUseGridRadius: 2
+    itemUseRadius: 0
+    isStartingItem: 0
+    canBePickedUp: 1
+    canBeDropped: 1
+    canBeEaten: 0
+    canBeCarried: 1
+  - itemCode: 10011
+    itemType: 5
+    itemDescription: Iron Pickaxe
+    itemSprite: {fileID: -2026280418, guid: 6455975669d1d0041860f62999fb307d, type: 3}
+    itemLongDescription: A basic Pickaxe
+    itemUseGridRadius: 1
+    itemUseRadius: 0
+    isStartingItem: 1
+    canBePickedUp: 1
+    canBeDropped: 0
+    canBeEaten: 0
+    canBeCarried: 0
+  - itemCode: 10012
+    itemType: 0
+    itemDescription: Big Stone
+    itemSprite: {fileID: -737161287, guid: 2c9a1965f41ba3c43b75e653528ccff5, type: 3}
+    itemLongDescription: 
+    itemUseGridRadius: 0
+    itemUseRadius: 0
+    isStartingItem: 0
+    canBePickedUp: 0
+    canBeDropped: 0
+    canBeEaten: 0
+    canBeCarried: 0
+  - itemCode: 10013
+    itemType: 1
+    itemDescription: Stone
+    itemSprite: {fileID: -1022806429, guid: 2c9a1965f41ba3c43b75e653528ccff5, type: 3}
+    itemLongDescription: A basic but important material
+    itemUseGridRadius: 2
+    itemUseRadius: 0
+    isStartingItem: 0
+    canBePickedUp: 1
+    canBeDropped: 1
+    canBeEaten: 0
+    canBeCarried: 1
+  - itemCode: 10014
+    itemType: 6
+    itemDescription: Scythe
+    itemSprite: {fileID: -672917570, guid: 008978dae0197364cacd8199961330aa, type: 3}
+    itemLongDescription: A basic scythe for reaping
+    itemUseGridRadius: 2
+    itemUseRadius: 1.5
+    isStartingItem: 1
+    canBePickedUp: 1
+    canBeDropped: 0
+    canBeEaten: 0
+    canBeCarried: 0
+  - itemCode: 10015
+    itemType: 8
+    itemDescription: Grass1
+    itemSprite: {fileID: -1375232037, guid: a9216059ef951d242a82c42feb3f3428, type: 3}
+    itemLongDescription: 
+    itemUseGridRadius: 0
+    itemUseRadius: 0
+    isStartingItem: 0
+    canBePickedUp: 0
+    canBeDropped: 0
+    canBeEaten: 0
+    canBeCarried: 0
+  - itemCode: 10016
+    itemType: 8
+    itemDescription: Grass2
+    itemSprite: {fileID: 64518061, guid: a9216059ef951d242a82c42feb3f3428, type: 3}
+    itemLongDescription: 
+    itemUseGridRadius: 0
+    itemUseRadius: 0
+    isStartingItem: 0
+    canBePickedUp: 0
+    canBeDropped: 0
+    canBeEaten: 0
+    canBeCarried: 0
+  - itemCode: 10017
+    itemType: 8
+    itemDescription: Grass3
+    itemSprite: {fileID: -161108406, guid: a9216059ef951d242a82c42feb3f3428, type: 3}
+    itemLongDescription: 
+    itemUseGridRadius: 0
+    itemUseRadius: 0
+    isStartingItem: 0
+    canBePickedUp: 0
+    canBeDropped: 0
+    canBeEaten: 0
+    canBeCarried: 0
+  - itemCode: 10018
+    itemType: 8
+    itemDescription: Bush
+    itemSprite: {fileID: -449964110, guid: 2c9a1965f41ba3c43b75e653528ccff5, type: 3}
+    itemLongDescription: 
+    itemUseGridRadius: 0
+    itemUseRadius: 0
+    isStartingItem: 0
+    canBePickedUp: 0
+    canBeDropped: 0
+    canBeEaten: 0
+    canBeCarried: 0
+  - itemCode: 10019
+    itemType: 11
+    itemDescription: Chair
+    itemSprite: {fileID: 459939829, guid: 7369b0b1ce9ff40488cebef3c3f7fa8b, type: 3}
+    itemLongDescription: 
+    itemUseGridRadius: 0
+    itemUseRadius: 0
+    isStartingItem: 0
+    canBePickedUp: 0
+    canBeDropped: 0
+    canBeEaten: 0
+    canBeCarried: 0
+  - itemCode: 10020
+    itemType: 11
+    itemDescription: Table
+    itemSprite: {fileID: 1710892604, guid: 7369b0b1ce9ff40488cebef3c3f7fa8b, type: 3}
+    itemLongDescription: 
+    itemUseGridRadius: 0
+    itemUseRadius: 0
+    isStartingItem: 0
+    canBePickedUp: 0
+    canBeDropped: 0
+    canBeEaten: 0
+    canBeCarried: 0

@@ -11,7 +11,13 @@ public enum ItemType
     Watering_tool,
     Hoeing_tool,
     Chopping_tool,
-
+    Breaking_tool,
+    Reaping_tool,
+    Collecting_tool,
+    Reapable_scenary,
+    none,
+    count,
+    furniture,
 }
 
 public enum Direction
