@@ -12,7 +12,7 @@ public class Player : SingletonMonobehavior<Player>
      isLifingToolRight, isLifingToolLeft, isLifingToolUp, isLifingToolDown,
      isPickingRight, isPickingLeft, isPickingUp, isPickingDown,
      isSwingingToolRight, isSwingingToolLeft, isSwingingToolUp, isSwingingToolDown,
-     idleUp, idleDwon, idleLeft, idleRight;
+     isWalkUp, isWalkDown, idleLeft, idleRight;
 
     private new Rigidbody2D rigidbody2D;
 
@@ -49,7 +49,7 @@ public class Player : SingletonMonobehavior<Player>
                isLifingToolRight, isLifingToolLeft, isLifingToolUp, isLifingToolDown,
                isPickingRight, isPickingLeft, isPickingUp, isPickingDown,
                isSwingingToolRight, isSwingingToolLeft, isSwingingToolUp, isSwingingToolDown,
-               false, false, false, false);
+               isWalkUp, isWalkDown, false, false);
 
         #endregion
     }
@@ -76,31 +76,26 @@ public class Player : SingletonMonobehavior<Player>
 
         if (inputY != 0 || inputX != 0)
         {
-            isRuning = true;
-            isWalking = false;
+            isWalking = true;
             isIdle = false;
             movementSpeed = Setting.runningSpeed;
 
-            if (inputX < 0)
+            if(inputY < 0)
             {
-                playerDirection = Direction.Left;
+                isWalkDown = true;
+                isWalking = false;
             }
-            else if (inputX > 0)
+            else if(inputY > 0)
             {
-                playerDirection = Direction.Right;
-            }
-            else if(inputY < 0)
-            {
-                playerDirection = Direction.Down;
-            }
-            else
-            {
-                playerDirection = Direction.Up;
+                isWalkUp = true;
+                isWalking = false;
             }
         }else if (inputY == 0 && inputX == 0)
         {
             isRuning = false;
             isWalking = false;
+            isWalkDown = false;
+            isWalkUp = false;
             isIdle = true;
         }
 
@@ -109,6 +104,12 @@ public class Player : SingletonMonobehavior<Player>
 
     private void ResetAnimationTriggers()
     {
+        isWalkDown = false;
+        isWalkUp = false;
+        isRuning = false;
+        isWalking = false;
+        isIdle = true;
+
         isUsingToolRight = false;
         isUsingToolLeft = false;
         isUsingToolUp = false;
@@ -134,16 +135,13 @@ public class Player : SingletonMonobehavior<Player>
     {
         if (Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift))
         {
-            isRuning = false;
-            isWalking = true;
-            isIdle = false;
-            movementSpeed = Setting.walkingSpeed;
-        }
-        else
-        {
             isRuning = true;
             isWalking = false;
             isIdle = false;
+            movementSpeed = Setting.runningSpeed;
+        }
+        else
+        {
             movementSpeed = Setting.runningSpeed;
         }
 

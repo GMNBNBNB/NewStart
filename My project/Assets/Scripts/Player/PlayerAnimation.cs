@@ -11,7 +11,7 @@ public class PlayerAnimation : MonoBehaviour
      isLifingToolRight, isLifingToolLeft, isLifingToolUp, isLifingToolDown,
      isPickingRight, isPickingLeft, isPickingUp, isPickingDown,
      isSwingingToolRight, isSwingingToolLeft, isSwingingToolUp, isSwingingToolDown,
-     idleUp, idleDwon, idleLeft, idleRight;
+     isWalkUp, isWalkDown, idleLeft, idleRight;
 
     public void Update()
     {
@@ -22,6 +22,6 @@ public class PlayerAnimation : MonoBehaviour
                isLifingToolRight, isLifingToolLeft, isLifingToolUp, isLifingToolDown,
                isPickingRight, isPickingLeft, isPickingUp, isPickingDown,
                isSwingingToolRight, isSwingingToolLeft, isSwingingToolUp, isSwingingToolDown,
-               idleUp, idleDwon, idleLeft, idleRight);
+               isWalkUp, isWalkDown, idleLeft, idleRight);
     }
 }

@@ -3,6 +3,7 @@ using UnityEngine;
 public class MovementAnimation : MonoBehaviour
 {
     private Animator animator;
+    private SpriteRenderer spriteRenderer;
     private void Awake()
     {
         animator = GetComponent<Animator>();
@@ -23,12 +24,15 @@ public class MovementAnimation : MonoBehaviour
         ToolEffect toolEffect, bool isLifingToolRight, bool isLifingToolLeft, bool isLifingToolUp, 
         bool isLifingToolDown, bool isPickingRight, bool isPickingLeft, bool isPickingUp, bool isPickingDwon, 
         bool isSwingingToolRight, bool isSwingingToolLeft, bool isSwingingToolUp, bool isSwingingToolDwon, 
-        bool idleUp, bool idleDwon, bool idleLeft, bool idleRight)
+        bool isWalkUp, bool isWalkDown, bool idleLeft, bool idleRight)
     {
         animator.SetFloat(Setting.inputX, inputX);
         animator.SetFloat(Setting.inputY, inputY);
         animator.SetBool(Setting.isWalking, isWalking);
         animator.SetBool(Setting.isRuning, isRuning);
+        animator.SetBool(Setting.isIdle, isIdle);
+        animator.SetBool(Setting.isWalkUp, isWalkUp);
+        animator.SetBool(Setting.isWalkDown, isWalkDown);
 
         animator.SetInteger(Setting.toolEffect, (int)toolEffect);
         if (isUsingToolRight)
@@ -65,10 +69,6 @@ public class MovementAnimation : MonoBehaviour
             animator.SetTrigger(Setting.isSwingingToolDwon);
 
 
-        if (idleUp)
-            animator.SetTrigger(Setting.idleUp);
-        if (idleDwon)
-            animator.SetTrigger(Setting.idleDwon);
         if (idleLeft)
             animator.SetTrigger(Setting.idleLeft);
         if (idleRight)
@@ -76,8 +76,17 @@ public class MovementAnimation : MonoBehaviour
 
     }
 
-    private void AnimationEvent()
+    private void Update()
     {
-
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        float horizontalInput = Input.GetAxis("Horizontal");
+        if (horizontalInput < 0)
+        {
+            spriteRenderer.flipX = true;
+        }
+        else if (horizontalInput > 0)
+        {
+            spriteRenderer.flipX = false;
+        }
     }
 }

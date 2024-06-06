@@ -9,7 +9,7 @@ public static class Setting
         isLifingToolRight, isLifingToolLeft, isLifingToolUp, isLifingToolDown,
         isPickingRight, isPickingLeft, isPickingUp, isPickingDwon,
         isSwingingToolRight, isSwingingToolLeft, isSwingingToolUp, isSwingingToolDwon,
-        idleUp, idleDwon, idleLeft, idleRight;
+        isWalkUp, isWalkDown, idleLeft, idleRight;
 
     public const float walkingSpeed = 5.333f;
     public const float runningSpeed = 2.666f;
@@ -39,8 +39,8 @@ public static class Setting
         isSwingingToolUp = Animator.StringToHash("isSwingingToolUp");
         isSwingingToolDwon = Animator.StringToHash("isSwingingToolDwon");
 
-        idleUp = Animator.StringToHash("idleUp");
-        idleDwon = Animator.StringToHash("idleDwon");
+        isWalkUp = Animator.StringToHash("isWalkUp");
+        isWalkDown = Animator.StringToHash("isWalkDown");
         idleLeft = Animator.StringToHash("idleLeft");
         idleRight = Animator.StringToHash("idleRight");
 
