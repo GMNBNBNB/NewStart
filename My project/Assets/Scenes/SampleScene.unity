@@ -431,8 +431,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0b09e7857660247b1477e93731de29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< Updated upstream
-=======
 --- !u!1001 &1840132628
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -530,7 +528,6 @@ SortingGroup:
   m_SortingLayer: 6
   m_SortingOrder: 0
   m_SortAtRoot: 0
->>>>>>> Stashed changes
 --- !u!1 &178567577711234167
 GameObject:
   m_ObjectHideFlags: 0
