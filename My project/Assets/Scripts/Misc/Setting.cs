@@ -11,8 +11,8 @@ public static class Setting
         isSwingingToolRight, isSwingingToolLeft, isSwingingToolUp, isSwingingToolDwon,
         isWalkUp, isWalkDown, idleLeft, idleRight;
 
-    public const float walkingSpeed = 5.333f;
-    public const float runningSpeed = 2.666f;
+    public const float walkingSpeed = 2.666f;
+    public const float runningSpeed = 5.333f;
 
     static Setting()
     {

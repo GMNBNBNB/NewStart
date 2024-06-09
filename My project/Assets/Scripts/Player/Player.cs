@@ -98,8 +98,6 @@ public class Player : SingletonMonobehavior<Player>
             isWalkUp = false;
             isIdle = true;
         }
-
-
     }
 
     private void ResetAnimationTriggers()
@@ -142,8 +140,7 @@ public class Player : SingletonMonobehavior<Player>
         }
         else
         {
-            movementSpeed = Setting.runningSpeed;
+            movementSpeed = Setting.walkingSpeed;
         }
-
     }
 }
