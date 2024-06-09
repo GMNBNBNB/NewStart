@@ -125,8 +125,8 @@ TextureImporter:
         y: 1831
         width: 14
         height: 9
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -768,6 +768,153 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Player (2)_3
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 1830
+        width: 13
+        height: 9
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 554d45286fd04d94b9ec7a75d94bf98e
+      internalID: 1866760189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player (2)_22
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 1830
+        width: 13
+        height: 9
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7be50ca550e1e304487cac086c23378a
+      internalID: -1226581364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player (2)_23
+      rect:
+        serializedVersion: 2
+        x: 1188
+        y: 1845
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbce58efcc0fdb4498bb7a308e8deb0b
+      internalID: -806116114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player (2)_24
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 1165
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 813b9d746bf109743a1cddd96a9b3674
+      internalID: -223258441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player (2)_25
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 1146
+        width: 17
+        height: 9
+      alignment: 9
+      pivot: {x: 0.49080214, y: 0.6377496}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce4e203a91d8edc4599a1f851e353432
+      internalID: 1579132613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player (2)_26
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 1126
+        width: 17
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 612685c59518a9f48a226bbe963839d5
+      internalID: 764024318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player (2)_27
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 1105
+        width: 18
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a8aa11f3aea88a4c986af125fa825ea
+      internalID: 427282308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -798,6 +945,13 @@ TextureImporter:
       Player (2)_2: -1124424279
       Player (2)_20: 1755472374
       Player (2)_21: -31635878
+      Player (2)_22: -1226581364
+      Player (2)_23: -806116114
+      Player (2)_24: -223258441
+      Player (2)_25: 1579132613
+      Player (2)_26: 764024318
+      Player (2)_27: 427282308
+      Player (2)_3: 1866760189
       Player (2)_4: -1721704562
       Player (2)_5: -788760527
       Player (2)_6: 2057333935
