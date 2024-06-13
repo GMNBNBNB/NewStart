@@ -1,7 +1,8 @@
 using UnityEngine;
 
-public class NewBehaviourScript : MonoBehaviour
+public class Item : MonoBehaviour
 {
+    [ItemCodeDescription]
     [SerializeField]
     private int _itemCode;
 
