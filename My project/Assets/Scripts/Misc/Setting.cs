@@ -2,6 +2,11 @@ using UnityEngine;
 
 public static class Setting
 {
+    // Item fading 
+    public const float fadeInSecond = 0.25f;
+    public const float fadeOutSecond = 0.35f;
+    public const float targetAlpha = 0.45f;
+    
     public static int inputX,inputY,
         isWalking, isRuning, isIdle, isUsingToolRight,
         isUsingToolLeft, isUsingToolUp, isUsingToolDown,
