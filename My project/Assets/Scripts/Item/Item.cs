@@ -1,6 +1,5 @@
 using UnityEngine;
 
-public class NewBehaviourScript : MonoBehaviour
 {
     [SerializeField]
     private int _itemCode;
