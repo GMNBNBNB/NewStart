@@ -16,8 +16,12 @@ public static class Setting
         isSwingingToolRight, isSwingingToolLeft, isSwingingToolUp, isSwingingToolDwon,
         isWalkUp, isWalkDown, idleLeft, idleRight;
 
+    // walk speed
     public const float walkingSpeed = 2.666f;
     public const float runningSpeed = 5.333f;
+
+    //Time System
+    public const float secondsPerGameSecond = 0.012f;
 
     static Setting()
     {

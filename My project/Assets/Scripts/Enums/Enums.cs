@@ -27,3 +27,13 @@ public enum Direction
     Left, 
     Right
 }
+
+public enum Season
+{
+    Spring,
+    Summer,
+    Autumn,
+    Winter,
+    none,
+    count
+}

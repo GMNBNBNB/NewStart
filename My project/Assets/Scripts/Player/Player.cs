@@ -42,6 +42,8 @@ public class Player : SingletonMonobehavior<Player>
 
         PlayerWalkInput();
 
+        PlayerTestTimeInput();
+
         EventHandler.CallMovementEvent(inputX, inputY,
                isWalking, isRuning, isIdle, isUsingToolRight,
                isUsingToolLeft, isUsingToolUp, isUsingToolDown,
@@ -141,6 +143,20 @@ public class Player : SingletonMonobehavior<Player>
         else
         {
             movementSpeed = Setting.walkingSpeed;
+        }
+    }
+
+    // Test Time
+    private void PlayerTestTimeInput()
+    {
+        if (Input.GetKey(KeyCode.T))
+        {
+            TimeManager.Instance.TestAdvanceGameMinute();
+        }
+
+        if (Input.GetKey(KeyCode.G))
+        {
+            TimeManager.Instance.TestAdvanceGameDay();
         }
     }
 }
