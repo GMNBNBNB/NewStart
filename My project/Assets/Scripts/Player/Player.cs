@@ -14,6 +14,8 @@ public class Player : SingletonMonobehavior<Player>
      isSwingingToolRight, isSwingingToolLeft, isSwingingToolUp, isSwingingToolDown,
      isWalkUp, isWalkDown, idleLeft, idleRight;
 
+    private Camera mainCamera;
+
     private new Rigidbody2D rigidbody2D;
 
     private Direction playerDirection;
@@ -31,6 +33,8 @@ public class Player : SingletonMonobehavior<Player>
         base.Awake();
 
         rigidbody2D = GetComponent<Rigidbody2D>();
+
+        mainCamera = Camera.main;
     }
 
     private void Update()
@@ -159,4 +163,10 @@ public class Player : SingletonMonobehavior<Player>
             TimeManager.Instance.TestAdvanceGameDay();
         }
     }
+
+    public Vector3 GetPlayerViewportPosition()
+    {
+        return mainCamera.WorldToViewportPoint(transform.position);
+    }
+
 }
