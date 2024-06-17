@@ -6,6 +6,10 @@ public static class Setting
     public const float fadeInSecond = 0.25f;
     public const float fadeOutSecond = 0.35f;
     public const float targetAlpha = 0.45f;
+
+    //Inventory
+    public static int playerInitialInventoryCapacity = 24;
+    public static int playerMaximumInventoryCapacity = 48;
     
     public static int inputX,inputY,
         isWalking, isRuning, isIdle, isUsingToolRight,
