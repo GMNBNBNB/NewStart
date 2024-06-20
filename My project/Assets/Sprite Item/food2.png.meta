@@ -349,7 +349,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -357,6 +357,27 @@ TextureImporter:
       bones: []
       spriteID: e21b97569a65e1643b2e9116273cf34f
       internalID: -449964110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: transparent
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 300
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a958498192fd36b44bedd91a924cab3a
+      internalID: 1879311014
       vertices: []
       indices: 
       edges: []
@@ -384,6 +405,7 @@ TextureImporter:
       StoneSeed: -737161287
       Wood: -54617100
       WoodSeed: 363696861
+      transparent: 1879311014
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
