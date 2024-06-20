@@ -4,9 +4,14 @@ using UnityEngine;
 public class SwitchConfineBoundingShape : MonoBehaviour
 {
     // Start is called before the first frame update
-    void Start()
+    private void OnEnable()
     {
-        SwitchBoundingShape();
+        EventHandler.AfterSceneloadEvent += SwitchBoundingShape;
+    }
+
+    private void OnDisable()
+    {
+        EventHandler.AfterSceneloadEvent -= SwitchBoundingShape;
     }
 
     /// <summary>

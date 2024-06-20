@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Player : SingletonMonobehavior<Player>
@@ -162,6 +163,12 @@ public class Player : SingletonMonobehavior<Player>
         {
             TimeManager.Instance.TestAdvanceGameDay();
         }
+
+        if (Input.GetKeyDown(KeyCode.L))
+        {
+            SceneControllerManager.Instance.FadeAndLoadScene(SceneName.Scene1_Farm.ToString(),transform.position);
+        }
+
     }
 
     public Vector3 GetPlayerViewportPosition()

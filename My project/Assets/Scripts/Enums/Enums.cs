@@ -1,4 +1,3 @@
-
 public enum InventoryLocation
 {
     player,
@@ -44,4 +43,11 @@ public enum Season
     Winter,
     none,
     count
+}
+
+public enum SceneName
+{
+    Scene1_Farm,
+    Scene2_Field,
+    Scene3_Cabin
 }
