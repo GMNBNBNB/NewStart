@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.XR;
 
 public class Player : SingletonMonobehavior<Player>
 {
@@ -41,22 +42,26 @@ public class Player : SingletonMonobehavior<Player>
     private void Update()
     {
         #region Player Input
-        ResetAnimationTriggers();
 
-        PlayerMovementInput();
+        if (!PlayerInputDisabled)
+        {
+            ResetAnimationTriggers();
 
-        PlayerWalkInput();
+            PlayerMovementInput();
 
-        PlayerTestTimeInput();
+            PlayerWalkInput();
 
-        EventHandler.CallMovementEvent(inputX, inputY,
-               isWalking, isRuning, isIdle, isUsingToolRight,
-               isUsingToolLeft, isUsingToolUp, isUsingToolDown,
-               toolEffect,
-               isLifingToolRight, isLifingToolLeft, isLifingToolUp, isLifingToolDown,
-               isPickingRight, isPickingLeft, isPickingUp, isPickingDown,
-               isSwingingToolRight, isSwingingToolLeft, isSwingingToolUp, isSwingingToolDown,
-               isWalkUp, isWalkDown, false, false);
+            PlayerTestTimeInput();
+
+            EventHandler.CallMovementEvent(inputX, inputY,
+                   isWalking, isRuning, isIdle, isUsingToolRight,
+                   isUsingToolLeft, isUsingToolUp, isUsingToolDown,
+                   toolEffect,
+                   isLifingToolRight, isLifingToolLeft, isLifingToolUp, isLifingToolDown,
+                   isPickingRight, isPickingLeft, isPickingUp, isPickingDown,
+                   isSwingingToolRight, isSwingingToolLeft, isSwingingToolUp, isSwingingToolDown,
+                   isWalkUp, isWalkDown, false, false);
+        }
 
         #endregion
     }
@@ -169,6 +174,39 @@ public class Player : SingletonMonobehavior<Player>
             SceneControllerManager.Instance.FadeAndLoadScene(SceneName.Scene1_Farm.ToString(),transform.position);
         }
 
+    }
+    private void ResetMovement()
+    {
+        inputX = 0f;
+        inputY = 0f;
+        isRuning = false;
+        isWalking = false;
+        isIdle = true;
+    }
+
+    public void DisablePlayerInputAndResetMovement()
+    {
+        DisablePlayerInput();
+        ResetMovement();
+
+        EventHandler.CallMovementEvent(inputX, inputY,
+                   isWalking, isRuning, isIdle, isUsingToolRight,
+                   isUsingToolLeft, isUsingToolUp, isUsingToolDown,
+                   toolEffect,
+                   isLifingToolRight, isLifingToolLeft, isLifingToolUp, isLifingToolDown,
+                   isPickingRight, isPickingLeft, isPickingUp, isPickingDown,
+                   isSwingingToolRight, isSwingingToolLeft, isSwingingToolUp, isSwingingToolDown,
+                   isWalkUp, isWalkDown, false, false);
+    }
+
+    public void DisablePlayerInput()
+    {
+        PlayerInputDisabled = true;
+    }
+
+    public void EnablePlayerInput()
+    {
+        PlayerInputDisabled = false;
     }
 
     public Vector3 GetPlayerViewportPosition()
