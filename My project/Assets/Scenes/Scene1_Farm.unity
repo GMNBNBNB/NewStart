@@ -652,7 +652,7 @@ GameObject:
   - component: {fileID: 1152610000}
   m_Layer: 0
   m_Name: Item
-  m_TagString: Untagged
+  m_TagString: ItemsParentTransform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
