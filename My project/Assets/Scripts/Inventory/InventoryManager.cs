@@ -84,6 +84,20 @@ public class InventoryManager : SingletonMonobehavior<InventoryManager>
         //DebugPrintInventoryList(inventoryList);
     }
 
+    public void SwapInventoryItems(InventoryLocation inventoryLocation, int fromItem, int toItem)
+    {
+        if (fromItem < inventoryLists[(int)inventoryLocation].Count && toItem < inventoryLists[(int)inventoryLocation].Count && fromItem != toItem && fromItem >= 0 && toItem >= 0)
+        {
+            InventoryItem fromInventoryItem = inventoryLists[(int)inventoryLocation][fromItem];
+            InventoryItem toInventoryItem = inventoryLists[(int)inventoryLocation][toItem];
+
+            inventoryLists[(int)inventoryLocation][toItem] = fromInventoryItem;
+            inventoryLists[(int)inventoryLocation][fromItem] = toInventoryItem;
+
+            EventHandler.CallInventoryUpdatedEvent(inventoryLocation, inventoryLists[(int)inventoryLocation]);
+        }
+    }
+
     public int FindItemInInventory(InventoryLocation inventoryLocation, int itemCode)
     {
         List<InventoryItem> inventoryList = inventoryLists[(int)inventoryLocation];
@@ -109,6 +123,43 @@ public class InventoryManager : SingletonMonobehavior<InventoryManager>
         {
             return null;
         }
+    }
+
+
+    public string GetItemTypeDescription(ItemType itemType)
+    {
+        string itemTypeDescription;
+        switch (itemType)
+        {
+            case ItemType.Breaking_tool:
+                itemTypeDescription = Setting.BreakingTool;
+                break;
+
+            case ItemType.Chopping_tool:
+                itemTypeDescription = Setting.ChoppingTool;
+                break;
+
+            case ItemType.Hoeing_tool:
+                itemTypeDescription = Setting.HoeingTool;
+                break;
+
+            case ItemType.Reaping_tool:
+                itemTypeDescription = Setting.ReapingTool;
+                break;
+
+            case ItemType.Watering_tool:
+                itemTypeDescription = Setting.WateringTool;
+                break;
+
+            case ItemType.Collecting_tool:
+                itemTypeDescription = Setting.CollectingTool;
+                break;
+
+            default:
+                itemTypeDescription = itemType.ToString();
+                break;
+        }
+        return itemTypeDescription;
     }
 
     public void RemoveItem(InventoryLocation inventoryLocation, int itemCode)
