@@ -197,6 +197,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1113144864}
     m_Modifications:
+    - target: {fileID: 2430942458411690629, guid: 65eb5010d0c0ae449b60ac1384082b36, type: 3}
+      propertyPath: inventoryBar
+      value: 
+      objectReference: {fileID: 1113144867}
     - target: {fileID: 5276519637874568230, guid: 65eb5010d0c0ae449b60ac1384082b36, type: 3}
       propertyPath: m_Name
       value: UIInventorySlot5
@@ -556,6 +560,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1113144864}
     m_Modifications:
+    - target: {fileID: 2430942458411690629, guid: 65eb5010d0c0ae449b60ac1384082b36, type: 3}
+      propertyPath: inventoryBar
+      value: 
+      objectReference: {fileID: 1113144867}
     - target: {fileID: 5276519637874568230, guid: 65eb5010d0c0ae449b60ac1384082b36, type: 3}
       propertyPath: m_Name
       value: UIInventorySlot2
@@ -653,6 +661,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1113144864}
     m_Modifications:
+    - target: {fileID: 2430942458411690629, guid: 65eb5010d0c0ae449b60ac1384082b36, type: 3}
+      propertyPath: inventoryBar
+      value: 
+      objectReference: {fileID: 1113144867}
     - target: {fileID: 5276519637874568230, guid: 65eb5010d0c0ae449b60ac1384082b36, type: 3}
       propertyPath: m_Name
       value: UIInventorySlot9
@@ -914,6 +926,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1113144864}
     m_Modifications:
+    - target: {fileID: 2430942458411690629, guid: 65eb5010d0c0ae449b60ac1384082b36, type: 3}
+      propertyPath: inventoryBar
+      value: 
+      objectReference: {fileID: 1113144867}
     - target: {fileID: 5276519637874568230, guid: 65eb5010d0c0ae449b60ac1384082b36, type: 3}
       propertyPath: m_Name
       value: UIInventorySlot4
@@ -1292,6 +1308,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1113144864}
     m_Modifications:
+    - target: {fileID: 2430942458411690629, guid: 65eb5010d0c0ae449b60ac1384082b36, type: 3}
+      propertyPath: inventoryBar
+      value: 
+      objectReference: {fileID: 1113144867}
     - target: {fileID: 5276519637874568230, guid: 65eb5010d0c0ae449b60ac1384082b36, type: 3}
       propertyPath: m_Name
       value: UIInventorySlot1
@@ -1435,6 +1455,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1113144864}
     m_Modifications:
+    - target: {fileID: 2430942458411690629, guid: 65eb5010d0c0ae449b60ac1384082b36, type: 3}
+      propertyPath: inventoryBar
+      value: 
+      objectReference: {fileID: 1113144867}
     - target: {fileID: 5276519637874568230, guid: 65eb5010d0c0ae449b60ac1384082b36, type: 3}
       propertyPath: m_Name
       value: UIInventorySlot3
@@ -1683,6 +1707,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1113144864}
     m_Modifications:
+    - target: {fileID: 2430942458411690629, guid: 65eb5010d0c0ae449b60ac1384082b36, type: 3}
+      propertyPath: inventoryBar
+      value: 
+      objectReference: {fileID: 1113144867}
     - target: {fileID: 5276519637874568230, guid: 65eb5010d0c0ae449b60ac1384082b36, type: 3}
       propertyPath: m_Name
       value: UIInventorySlot8
@@ -2029,6 +2057,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1113144864}
     m_Modifications:
+    - target: {fileID: 2430942458411690629, guid: 65eb5010d0c0ae449b60ac1384082b36, type: 3}
+      propertyPath: inventoryBar
+      value: 
+      objectReference: {fileID: 1113144867}
     - target: {fileID: 5276519637874568230, guid: 65eb5010d0c0ae449b60ac1384082b36, type: 3}
       propertyPath: m_Name
       value: UIInventorySlot6
@@ -2254,7 +2286,7 @@ MonoBehaviour:
   fadeDuration: 1
   faderCanvasGroup: {fileID: 1078129535}
   faderImage: {fileID: 1078129532}
-  startingSceneName: 1
+  startingSceneName: 0
 --- !u!4 &1271168030
 Transform:
   m_ObjectHideFlags: 0
@@ -2662,6 +2694,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1113144864}
     m_Modifications:
+    - target: {fileID: 2430942458411690629, guid: 65eb5010d0c0ae449b60ac1384082b36, type: 3}
+      propertyPath: inventoryBar
+      value: 
+      objectReference: {fileID: 1113144867}
     - target: {fileID: 5276519637874568230, guid: 65eb5010d0c0ae449b60ac1384082b36, type: 3}
       propertyPath: m_Name
       value: UIInventorySlot11
@@ -2759,6 +2795,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1113144864}
     m_Modifications:
+    - target: {fileID: 2430942458411690629, guid: 65eb5010d0c0ae449b60ac1384082b36, type: 3}
+      propertyPath: inventoryBar
+      value: 
+      objectReference: {fileID: 1113144867}
     - target: {fileID: 5276519637874568230, guid: 65eb5010d0c0ae449b60ac1384082b36, type: 3}
       propertyPath: m_Name
       value: UIInventorySlot10
@@ -2888,6 +2928,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1113144864}
     m_Modifications:
+    - target: {fileID: 2430942458411690629, guid: 65eb5010d0c0ae449b60ac1384082b36, type: 3}
+      propertyPath: inventoryBar
+      value: 
+      objectReference: {fileID: 1113144867}
     - target: {fileID: 5276519637874568230, guid: 65eb5010d0c0ae449b60ac1384082b36, type: 3}
       propertyPath: m_Name
       value: UIInventorySlot7
@@ -3020,6 +3064,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1113144864}
     m_Modifications:
+    - target: {fileID: 2430942458411690629, guid: 65eb5010d0c0ae449b60ac1384082b36, type: 3}
+      propertyPath: inventoryBar
+      value: 
+      objectReference: {fileID: 1113144867}
     - target: {fileID: 5276519637874568230, guid: 65eb5010d0c0ae449b60ac1384082b36, type: 3}
       propertyPath: m_Name
       value: UIInventorySlot0
