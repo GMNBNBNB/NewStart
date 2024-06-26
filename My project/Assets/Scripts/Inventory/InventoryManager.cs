@@ -6,6 +6,8 @@ public class InventoryManager : SingletonMonobehavior<InventoryManager>
 {
     private Dictionary<int, ItemDetails> itemDetailsDictionary;
 
+    private int[] selectedInventoryItem;
+
     public List<InventoryItem>[] inventoryLists;
     [HideInInspector] public int[] inventoryListCapacityInArray;
 
@@ -16,6 +18,12 @@ public class InventoryManager : SingletonMonobehavior<InventoryManager>
         base.Awake();
         CreateInventoryLists();
         CreateItemDetailsDictionary();
+
+        selectedInventoryItem = new int[(int)InventoryLocation.count];
+        for (int i = 0; i < selectedInventoryItem.Length; i++)
+        {
+            selectedInventoryItem[i] = -1;
+        }
     }
 
     private void CreateInventoryLists()
@@ -96,6 +104,11 @@ public class InventoryManager : SingletonMonobehavior<InventoryManager>
 
             EventHandler.CallInventoryUpdatedEvent(inventoryLocation, inventoryLists[(int)inventoryLocation]);
         }
+    }
+
+    public void ClearSelectedInventoryItem(InventoryLocation inventoryLocation)
+    {
+        selectedInventoryItem[(int)inventoryLocation] = -1;
     }
 
     public int FindItemInInventory(InventoryLocation inventoryLocation, int itemCode)
@@ -188,6 +201,11 @@ public class InventoryManager : SingletonMonobehavior<InventoryManager>
         {
             inventoryList.RemoveAt(position);
         }
+    }
+
+    public void SetSelectedInventoryItem(InventoryLocation inventoryLocation, int itemCode)
+    {
+        selectedInventoryItem[(int)inventoryLocation] = itemCode;
     }
 
     //private void DebugPrintInventoryList(List<InventoryItem> inventoryList)
