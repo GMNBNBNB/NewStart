@@ -186,4 +186,6 @@ public class UIInventorySlot : MonoBehaviour, IBeginDragHandler, IEndDragHandler
     }
 
     
+
+
 }
