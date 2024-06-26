@@ -39,6 +39,8 @@ public class SceneControllerManager : SingletonMonobehavior<SceneControllerManag
 
         yield return StartCoroutine(Fade(1f));
 
+        SaveLoadManager.Instance.StoreCurrentSceneData();
+
         Player.Instance.gameObject.transform.position = spawnPosition;
 
         EventHandler.CallBeforeSceneUnloadEvent();
@@ -50,6 +52,10 @@ public class SceneControllerManager : SingletonMonobehavior<SceneControllerManag
         yield return StartCoroutine(LoadSceneAndSetActive(sceneName));
 
         EventHandler.CallAfterSceneloadEvent();
+
+
+        SaveLoadManager.Instance.RestoreCurrentSceneData();
+
 
         yield return StartCoroutine(Fade(0f));
 
@@ -74,6 +80,8 @@ public class SceneControllerManager : SingletonMonobehavior<SceneControllerManag
         yield return StartCoroutine(LoadSceneAndSetActive(startingSceneName.ToString()));
 
         EventHandler.CallAfterSceneloadEvent();
+
+        SaveLoadManager.Instance.RestoreCurrentSceneData();
 
         StartCoroutine(Fade(0f));
     }
