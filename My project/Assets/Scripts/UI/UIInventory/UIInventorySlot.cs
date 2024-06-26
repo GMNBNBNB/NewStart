@@ -8,7 +8,7 @@ public class UIInventorySlot : MonoBehaviour, IBeginDragHandler, IEndDragHandler
 {
     private Camera mainCamera;
     private Transform parentItem;
-        private GameObject draggedItem;
+    private GameObject draggedItem;
 
     public Image inventorySlotHighlight;
     public Image inventorySlotImage;
@@ -93,6 +93,4 @@ public class UIInventorySlot : MonoBehaviour, IBeginDragHandler, IEndDragHandler
     {
         parentItem = GameObject.FindGameObjectWithTag(Tags.ItemsParentTransform).transform;
     }
-
-    
 }
