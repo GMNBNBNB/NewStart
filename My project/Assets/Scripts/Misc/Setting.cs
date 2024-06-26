@@ -27,6 +27,13 @@ public static class Setting
     //Time System
     public const float secondsPerGameSecond = 0.012f;
 
+    public const string HoeingTool = "Hoe";
+    public const string ChoppingTool = "Axe";
+    public const string BreakingTool = "Pickaxe";
+    public const string ReapingTool = "Scythe";
+    public const string WateringTool = "Watering Can";
+    public const string CollectingTool = "Basket";
+
     static Setting()
     {
         inputX = Animator.StringToHash("inputX");
