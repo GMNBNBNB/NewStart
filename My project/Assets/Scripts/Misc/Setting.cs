@@ -10,6 +10,11 @@ public static class Setting
     //Inventory
     public static int playerInitialInventoryCapacity = 24;
     public static int playerMaximumInventoryCapacity = 48;
+
+    //Tilemap
+    public const float gridCellSize = 1f;
+    public static Vector2 cursorSize = Vector2.one;
+
     
     public static int inputX,inputY,
         isWalking, isRuning, isIdle, isUsingToolRight,
@@ -23,6 +28,10 @@ public static class Setting
     // walk speed
     public const float walkingSpeed = 2.666f;
     public const float runningSpeed = 5.333f;
+    public static float useToolAnimationPause = 0.25f;
+    public static float afterUseToolAnimationPause = 0.2f;
+
+
 
     //Time System
     public const float secondsPerGameSecond = 0.012f;
