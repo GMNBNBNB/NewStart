@@ -915,6 +915,27 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: ArmUpCarry
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 1549
+        width: 16
+        height: 14
+      alignment: 9
+      pivot: {x: 0.4938622, y: -0.41788155}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1061875b4bc74a498ffe55efb001769
+      internalID: 25116515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -926,6 +947,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      ArmUpCarry: 25116515
       Idl: -2004140162
       Idle1: -1582845126
       Idle2: 1815123137

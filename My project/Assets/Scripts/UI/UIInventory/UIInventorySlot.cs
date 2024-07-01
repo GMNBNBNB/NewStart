@@ -49,6 +49,15 @@ public class UIInventorySlot : MonoBehaviour, IBeginDragHandler, IEndDragHandler
         isSelected = true;
         inventoryBar.SetHighlightedInventorySlots();
         InventoryManager.Instance.SetSelectedInventoryItem(InventoryLocation.player, itemDetails.itemCode);
+
+        if (itemDetails.canBeCarried == true)
+        {
+            Player.Instance.ShowCarriedItem(itemDetails.itemCode);
+        }
+        else
+        {
+            Player.Instance.ClearCarriedItem();
+        }
     }
 
     private void ClearSelectedItem()
@@ -56,6 +65,7 @@ public class UIInventorySlot : MonoBehaviour, IBeginDragHandler, IEndDragHandler
         inventoryBar.ClearHighlightOnInventorySlots();
         isSelected = false;
         InventoryManager.Instance.ClearSelectedInventoryItem(InventoryLocation.player);
+        Player.Instance.ClearCarriedItem();
     }
 
     private void DropSelectedItemAtMousePosition()

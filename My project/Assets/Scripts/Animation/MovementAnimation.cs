@@ -24,8 +24,9 @@ public class MovementAnimation : MonoBehaviour
         ToolEffect toolEffect, bool isLifingToolRight, bool isLifingToolLeft, bool isLifingToolUp, 
         bool isLifingToolDown, bool isPickingRight, bool isPickingLeft, bool isPickingUp, bool isPickingDwon, 
         bool isSwingingToolRight, bool isSwingingToolLeft, bool isSwingingToolUp, bool isSwingingToolDwon, 
-        bool isWalkUp, bool isWalkDown, bool idleLeft, bool idleRight)
+        bool isWalkUp, bool isWalkDown, bool isCarrying, bool idleRight)
     {
+        animator.SetBool(Setting.isCarrying, isCarrying);
         animator.SetFloat(Setting.inputX, inputX);
         animator.SetFloat(Setting.inputY, inputY);
         animator.SetBool(Setting.isWalking, isWalking);
@@ -68,9 +69,6 @@ public class MovementAnimation : MonoBehaviour
         if (isSwingingToolDwon)
             animator.SetTrigger(Setting.isSwingingToolDwon);
 
-
-        if (idleLeft)
-            animator.SetTrigger(Setting.idleLeft);
         if (idleRight)
             animator.SetTrigger(Setting.idleRight);
 

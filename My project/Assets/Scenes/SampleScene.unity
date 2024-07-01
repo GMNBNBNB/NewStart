@@ -298,6 +298,53 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 65eb5010d0c0ae449b60ac1384082b36, type: 3}
+--- !u!1 &62686038
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 62686039}
+  - component: {fileID: 62686040}
+  m_Layer: 0
+  m_Name: CharacterCustomiser
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &62686039
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 62686038}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3978125007725301707}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &62686040
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 62686038}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474d06a08f4dcbe4a8a6878c6ba3943a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  character: {fileID: 7524010172276189801}
+  soAnimationTypeArray:
+  - {fileID: 11400000, guid: d92d26a96816b074f9c90e42edf98a4a, type: 2}
 --- !u!1 &172290143
 GameObject:
   m_ObjectHideFlags: 0
@@ -5686,13 +5733,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce4c897c650827042a98bb6f5fe08da3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animationOverrides: {fileID: 0}
   inputX: 0
   inputY: 0
   toolEffect: 0
-  isWalking: 0
+  isWalking: 1
   isRuning: 0
   isIdle: 0
-  isUsingToolRight: 0
+  isUsingToolRight: 1
   isUsingToolLeft: 0
   isUsingToolUp: 0
   isUsingToolDown: 0
@@ -5710,8 +5758,9 @@ MonoBehaviour:
   isSwingingToolDown: 0
   isWalkUp: 0
   isWalkDown: 0
-  idleLeft: 0
+  isCarrying: 0
   idleRight: 0
+  equippedItemSpriteRenderer: {fileID: 7313306463938985268}
 --- !u!212 &1548079230011791606
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5960,6 +6009,7 @@ Transform:
   - {fileID: 6564665453234875658}
   - {fileID: 3345154295781166900}
   - {fileID: 2711084844368896801}
+  - {fileID: 62686039}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4366134046700248714
@@ -5990,7 +6040,7 @@ Transform:
   m_GameObject: {fileID: 7738865797631999537}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.002, y: 0.407, z: 0}
+  m_LocalPosition: {x: 0.008, y: 0.411, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6143,8 +6193,8 @@ Transform:
   m_GameObject: {fileID: 6839437888818138637}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 1.5, z: 0}
+  m_LocalScale: {x: 6, y: 6, z: 6}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3978125007725301707}
@@ -6352,7 +6402,6 @@ GameObject:
   - component: {fileID: 8235483734953425825}
   - component: {fileID: 8235483734953425820}
   - component: {fileID: 1299487523203595727}
-  - component: {fileID: 8235483734953425821}
   - component: {fileID: 8235483734953425823}
   - component: {fileID: 8235483734953425824}
   m_Layer: 0
@@ -6426,44 +6475,6 @@ SortingGroup:
   m_SortingLayer: 6
   m_SortingOrder: 0
   m_SortAtRoot: 0
---- !u!114 &8235483734953425821
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7524010172276189801}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fa2393d49bde6a747ab5414c8b2d0809, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  inputX: 0
-  inputY: 0
-  toolEffect: 0
-  isWalking: 0
-  isRuning: 0
-  isIdle: 0
-  isUsingToolRight: 0
-  isUsingToolLeft: 0
-  isUsingToolUp: 0
-  isUsingToolDown: 0
-  isLifingToolRight: 0
-  isLifingToolLeft: 0
-  isLifingToolUp: 0
-  isLifingToolDown: 0
-  isPickingRight: 0
-  isPickingLeft: 0
-  isPickingUp: 0
-  isPickingDown: 0
-  isSwingingToolRight: 0
-  isSwingingToolLeft: 0
-  isSwingingToolUp: 0
-  isSwingingToolDown: 0
-  isWalkUp: 0
-  isWalkDown: 0
-  idleLeft: 0
-  idleRight: 0
 --- !u!61 &8235483734953425822
 BoxCollider2D:
   m_ObjectHideFlags: 0
