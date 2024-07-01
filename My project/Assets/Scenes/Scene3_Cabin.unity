@@ -721,6 +721,7 @@ GameObject:
   - component: {fileID: 5272371227551421266}
   - component: {fileID: 8930668085273888909}
   - component: {fileID: 2822241622133367797}
+  - component: {fileID: 8930668085273888910}
   m_Layer: 0
   m_Name: BoolCanPlaceFurniture
   m_TagString: Untagged
@@ -949,6 +950,7 @@ GameObject:
   - component: {fileID: 1020362737698065847}
   - component: {fileID: 9211984948065648313}
   - component: {fileID: 3881610225633966810}
+  - component: {fileID: 9211984948065648314}
   m_Layer: 0
   m_Name: BoolCanDropItem
   m_TagString: Untagged
@@ -3204,6 +3206,7 @@ GameObject:
   - component: {fileID: 8347374395715468661}
   - component: {fileID: 5319156788700182797}
   - component: {fileID: 4062183455754609267}
+  - component: {fileID: 8347374395715468662}
   m_Layer: 0
   m_Name: BoolNPCObstacle
   m_TagString: Untagged
@@ -9688,6 +9691,7 @@ GameObject:
   - component: {fileID: 6537225859812699875}
   - component: {fileID: 6446605917124766609}
   - component: {fileID: 3951869879787994100}
+  - component: {fileID: 6537225859812699876}
   m_Layer: 0
   m_Name: BoolCanDiggable
   m_TagString: Untagged
@@ -9954,6 +9958,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2342404001467351834}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6537225859812699876
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5066680227869646235}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abb9530f44f856246bce43cc42201dc9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gridProperties: {fileID: 11400000, guid: 6f70ed75d549eba4d87653bda44048ca, type: 2}
+  gridBoolProperty: 0
 --- !u!4 &6591268273073480855
 Transform:
   m_ObjectHideFlags: 0
@@ -10846,6 +10864,7 @@ GameObject:
   - component: {fileID: 5749902729413646795}
   - component: {fileID: 1877773385226982224}
   - component: {fileID: 4656251979647925908}
+  - component: {fileID: 7760977063116685453}
   m_Layer: 0
   m_Name: BoolPath
   m_TagString: Untagged
@@ -10853,6 +10872,20 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &7760977063116685453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7760977063116685452}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abb9530f44f856246bce43cc42201dc9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gridProperties: {fileID: 11400000, guid: 6f70ed75d549eba4d87653bda44048ca, type: 2}
+  gridBoolProperty: 3
 --- !u!66 &8239746379501143743
 CompositeCollider2D:
   m_ObjectHideFlags: 0
@@ -11009,6 +11042,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2342404001467351834}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8347374395715468662
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3892034496671278735}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abb9530f44f856246bce43cc42201dc9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gridProperties: {fileID: 11400000, guid: 6f70ed75d549eba4d87653bda44048ca, type: 2}
+  gridBoolProperty: 4
 --- !u!1 &8535965788614486651
 GameObject:
   m_ObjectHideFlags: 0
@@ -11457,6 +11504,20 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!114 &8930668085273888910
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2261947970403603469}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abb9530f44f856246bce43cc42201dc9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gridProperties: {fileID: 11400000, guid: 6f70ed75d549eba4d87653bda44048ca, type: 2}
+  gridBoolProperty: 2
 --- !u!1839735485 &9211984948065648313
 Tilemap:
   m_ObjectHideFlags: 0
@@ -11477,14 +11538,14 @@ Tilemap:
   m_Origin: {x: 0, y: 0, z: 0}
   m_Size: {x: 0, y: 0, z: 1}
   m_TileAnchor: {x: 0.5, y: 0.5, z: 0}
-  m_TileOrientation: 0
+  m_TileOrientation: 6
   m_TileOrientationMatrix:
-    e00: 1
+    e00: 7
     e01: 0
     e02: 0
     e03: 0
     e10: 0
-    e11: 1
+    e11: 7
     e12: 0
     e13: 0
     e20: 0
@@ -11495,6 +11556,20 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!114 &9211984948065648314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3220747239327132859}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abb9530f44f856246bce43cc42201dc9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gridProperties: {fileID: 11400000, guid: 6f70ed75d549eba4d87653bda44048ca, type: 2}
+  gridBoolProperty: 1
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
