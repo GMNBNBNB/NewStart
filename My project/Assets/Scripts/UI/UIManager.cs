@@ -5,6 +5,8 @@ using System;
 public class UIManager : SingletonMonobehavior<UIManager>
 {
     private bool _pauseMenuOn = false;
+    [SerializeField] private UIInventoryBar uiInventoryBar = null;
+    [SerializeField] private PauseMenuInventoryManagement pauseMenuInventoryManagement = null;
     [SerializeField] private GameObject pauseMenu = null;
     [SerializeField] private GameObject[] menuTabs = null;
     [SerializeField] private Button[] menuButton = null;
@@ -40,6 +42,9 @@ public class UIManager : SingletonMonobehavior<UIManager>
 
     private void EnablePauseMenu()
     {
+        uiInventoryBar.DestoryCurrentDraggedItems();
+        uiInventoryBar.ClearCurrentlySelectedItems();
+
         PauseMenuOn = true;
         Player.Instance.PlayerInputDisabled = true;
         Time.timeScale = 0;
@@ -53,6 +58,8 @@ public class UIManager : SingletonMonobehavior<UIManager>
     }
     private void DisablePauseMenu()
     {
+        pauseMenuInventoryManagement.DestoryCurrentDraggedItems();
+
         PauseMenuOn = false;
         Player.Instance.PlayerInputDisabled = false;
         Time.timeScale = 1;

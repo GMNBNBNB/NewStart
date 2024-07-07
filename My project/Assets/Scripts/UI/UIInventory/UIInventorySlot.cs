@@ -10,7 +10,7 @@ public class UIInventorySlot : MonoBehaviour, IBeginDragHandler, IEndDragHandler
     private Camera mainCamera;
     private Canvas parentCanvas;
     private Transform parentItem;
-    private GameObject draggedItem;
+    public GameObject draggedItem;
 
     public Image inventorySlotHighlight;
     public Image inventorySlotImage;
@@ -60,7 +60,7 @@ public class UIInventorySlot : MonoBehaviour, IBeginDragHandler, IEndDragHandler
         }
     }
 
-    private void ClearSelectedItem()
+    public void ClearSelectedItem()
     {
         inventoryBar.ClearHighlightOnInventorySlots();
         isSelected = false;
