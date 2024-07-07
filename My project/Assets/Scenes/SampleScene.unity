@@ -11072,6 +11072,69 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: acc0581dca7645a4ca6e76f8ec1a0029, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &2055384570
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2055384573}
+  - component: {fileID: 2055384572}
+  - component: {fileID: 2055384571}
+  m_Layer: 0
+  m_Name: GridPropertiesManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2055384571
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2055384570}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3b72fb291d73044a9f57e718db88348, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  grid: {fileID: 0}
+  so_gridPropertiesArray:
+  - {fileID: 11400000, guid: 6f70ed75d549eba4d87653bda44048ca, type: 2}
+  - {fileID: 11400000, guid: 38254571433ae0146bf23b59853e66a2, type: 2}
+  - {fileID: 11400000, guid: b6f3578328183cf498099e53b8779169, type: 2}
+--- !u!114 &2055384572
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2055384570}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8439eb7b844acbf4b88403d54a28844d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _gUID: 4eb799bb-9de8-4d20-ab10-f789e942191f
+--- !u!4 &2055384573
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2055384570}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2060643490
 GameObject:
   m_ObjectHideFlags: 0
@@ -12823,3 +12886,4 @@ SceneRoots:
   - {fileID: 1271168030}
   - {fileID: 1053754141}
   - {fileID: 291829315}
+  - {fileID: 2055384573}
