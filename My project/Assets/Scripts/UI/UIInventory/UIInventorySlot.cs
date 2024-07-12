@@ -10,6 +10,7 @@ public class UIInventorySlot : MonoBehaviour, IBeginDragHandler, IEndDragHandler
     private Camera mainCamera;
     private Canvas parentCanvas;
     private Transform parentItem;
+    private GridCursor gridCursor;
     public GameObject draggedItem;
 
     public Image inventorySlotHighlight;
@@ -41,6 +42,13 @@ public class UIInventorySlot : MonoBehaviour, IBeginDragHandler, IEndDragHandler
     private void Start()
     {
         mainCamera = Camera.main;
+        gridCursor = FindObjectOfType<GridCursor>();
+    }
+
+    private void ClearCursor()
+    {
+        gridCursor.DisableCursor();
+        gridCursor.SelectedItemType = ItemType.none;
     }
 
     public void SetSelectedItem()
@@ -48,6 +56,19 @@ public class UIInventorySlot : MonoBehaviour, IBeginDragHandler, IEndDragHandler
         inventoryBar.ClearHighlightOnInventorySlots();
         isSelected = true;
         inventoryBar.SetHighlightedInventorySlots();
+
+        gridCursor.ItemUseGridRadius = itemDetails.itemUseGridRadius;
+        if (itemDetails.itemUseGridRadius > 0)
+        {
+            gridCursor.EnableCursor();
+        }
+        else
+        {
+            gridCursor.DisableCursor();
+        }
+
+        gridCursor.SelectedItemType = itemDetails.itemType;
+
         InventoryManager.Instance.SetSelectedInventoryItem(InventoryLocation.player, itemDetails.itemCode);
 
         if (itemDetails.canBeCarried == true)
@@ -62,6 +83,7 @@ public class UIInventorySlot : MonoBehaviour, IBeginDragHandler, IEndDragHandler
 
     public void ClearSelectedItem()
     {
+        ClearCursor();
         inventoryBar.ClearHighlightOnInventorySlots();
         isSelected = false;
         InventoryManager.Instance.ClearSelectedInventoryItem(InventoryLocation.player);
@@ -72,13 +94,9 @@ public class UIInventorySlot : MonoBehaviour, IBeginDragHandler, IEndDragHandler
     {
         if (itemDetails != null && isSelected)
         {
-            Vector3 worldPosition = mainCamera.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, -mainCamera.transform.position.z));
-
-            Vector3Int gridPosition = GridPropertiesManager.Instance.grid.WorldToCell(worldPosition);
-            GridPropertyDetails gridPropertyDetails = GridPropertiesManager.Instance.GetGridPropertyDetails(gridPosition.x, gridPosition.y);
-
-            if (gridPropertyDetails != null && gridPropertyDetails.canDropItem)
+            if (gridCursor.CursorPositionIsValid)
             {
+                Vector3 worldPosition = mainCamera.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, -mainCamera.transform.position.z));
                 GameObject itemGameObject = Instantiate(itemPrefab, new Vector3(worldPosition.x, worldPosition.y - Setting.gridCellSize/2f, worldPosition.z), Quaternion.identity, parentItem);
                 Item item = itemGameObject.GetComponent<Item>();
                 item.ItemCode = itemDetails.itemCode;
