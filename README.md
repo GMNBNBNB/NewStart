@@ -34,13 +34,14 @@ NewStart-main/
 **Scenes**: Contains different game environments, handling the game’s physics and layout.  
 **Scriptable Objects**: Flexible data storage for items, skills, and other in-game objects.  
 **Scripts**: Core logic of the game, divided into several key modules:  
-    -**Game Manager**: Oversees the global game state and controls the main game loop.  
-    -**Inventory System**: Handles item storage, item slots, and usage within the game.  
-    -**Save System**: Manages saving and loading game progress.  
-    -**Time System**: Controls day/night cycles and time progression within the game.  
-    -**Player Control**: Handles player input and movement.  
-    -**Map Management**: Manages loading, navigating, and interacting with the game world.  
-    -**UI System**: Manages in-game menus, HUD, and user interactions.  
+&nbsp;&nbsp;&nbsp;&nbsp;-**Game Manager**: Oversees the global game state and controls the main game loop.  
+&nbsp;&nbsp;&nbsp;&nbsp;-**Inventory System**: Handles item storage, item slots, and usage within the game.  
+&nbsp;&nbsp;&nbsp;&nbsp;-**Save System**: Manages saving and loading game progress.  
+&nbsp;&nbsp;&nbsp;&nbsp;-**Time System**: Controls day/night cycles and time progression within the game.  
+&nbsp;&nbsp;&nbsp;&nbsp;-**Player Control**: Handles player input and movement.  
+&nbsp;&nbsp;&nbsp;&nbsp;-**Map Management**: Manages loading, navigating, and interacting with the game world.  
+&nbsp;&nbsp;&nbsp;&nbsp;-**UI System**: Manages in-game menus, HUD, and user interactions.
+
 
 
 ## How to Run
