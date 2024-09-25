@@ -12,21 +12,21 @@
 ## Directory Structure
 NewStart-main/                                 
 │                                      
-├── .gitattributes         # Git attributes file    
-├── .gitignore             # Git ignore file    
-└── My project/            # Main project folder    
-    ├── .vsconfig          # Visual Studio configuration file    
-    ├── Assets/            # Game assets folder   
-    │   ├── Player Animation     # Player animation assets   
-    │   ├── Prefabs               # Game object prefabs   
-    │   ├── Scenes                # Game scenes   
-    │   ├── Scriptable object Assets  # Scriptable object assets    
-    │   ├── Scripts               # Game scripts    
-    │   ├── Sprite Item           # Item sprites    
-    │   ├── TextMesh Pro          # Fonts and text rendering assets    
-    │   └── Tilemap               # Tilemap assets   
-    ├── Packages/           # Unity package management files   
-    └── ProjectSettings/    # Project settings folder   
+├── .gitattributes         # *Git attributes file*    
+├── .gitignore             # *Git ignore file*    
+└── My project/            # *Main project folder*    
+    ├── .vsconfig          # *Visual Studio configuration file*    
+    ├── Assets/            # *Game assets folder*   
+    │   ├── Player Animation     # *Player animation assets*   
+    │   ├── Prefabs               # *Game object prefabs*   
+    │   ├── Scenes                # *Game scenes*   
+    │   ├── Scriptable object Assets  # *Scriptable object assets*    
+    │   ├── Scripts               # *Game scripts*    
+    │   ├── Sprite Item           # *Item sprites*    
+    │   ├── TextMesh Pro          # *Fonts and text rendering assets*    
+    │   └── Tilemap               # *Tilemap assets*   
+    ├── Packages/           # *Unity package management files*   
+    └── ProjectSettings/    # *Project settings folder*   
 
 ## Key Features
 **Player Animation**: Manages various player animations such as walking, running, and attacking.  
