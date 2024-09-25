@@ -9,7 +9,7 @@
 **Key Features**   
 **How to Run**   
 
-
+## Directory Structure
 NewStart-main/                                 
 │                                      
 ├── .gitattributes         # Git attributes file    
